@@ -47,6 +47,13 @@
 
 # Generated files
 .idea/**/contentModel.xml
+# ---- Sonar
+.sonar
+# ---- IntelliJ IDEA
+*.iws
+*.iml
+*.ipr
+.idea
 
 # Sensitive or high-churn files
 .idea/**/dataSources/
