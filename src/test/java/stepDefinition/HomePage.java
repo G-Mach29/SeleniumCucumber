@@ -9,7 +9,7 @@ import static pages.HomePage.click_signIn_link;
 
 public class HomePage {
     @Given("User navigates to the Online products page")
-    public void userNavigatesToTheOnlineProductsPage() throws InterruptedException {
+    public void userNavigatesToTheOnlineProductsPage() {
         click_hamburger_menu();
         click_signIn_link();
     }
