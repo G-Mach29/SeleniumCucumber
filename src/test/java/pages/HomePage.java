@@ -27,5 +27,9 @@ public class HomePage {
         wait.until(d-> driver.findElement(By.linkText(signIn_link_LinkText)).isDisplayed());
         driver.findElement(By.linkText(signIn_link_LinkText)).click();
     }
+    public static void click_OnlineProducts_link() throws InterruptedException {
+        Thread.sleep(2000);
+        driver.findElement(By.linkText(onlineProductsPage_link_LinkText)).click();
+    }
 
 }
