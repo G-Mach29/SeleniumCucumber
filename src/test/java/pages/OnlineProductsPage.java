@@ -2,8 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 
-import static pages.HomePage.driver;
-
+import static utility.BrowserDriver.driver;
 public class OnlineProductsPage {
     public static String formalshoes_dropdown_class = "formalshoedropdown";
 
@@ -11,7 +10,7 @@ public class OnlineProductsPage {
 
     public static String formalshoes_webtable_tr = "/html/body/div[2]/table/tbody/tr[1]/td[1]";
 
-    public static void click_formalshoesdropdpown() throws InterruptedException {
+    public static void click_formalshoesdropdpown()  {
         driver.findElement(By.className(formalshoes_dropdown_class)).click();
     }
 

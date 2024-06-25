@@ -6,14 +6,14 @@ import static pages.LoginPage.*;
 
 public class LoginPage {
     @When("User successfully enters the log in details")
-    public void user_successfully_enters_the_log_in_details() throws InterruptedException {
+    public void user_successfully_enters_the_log_in_details(){
         sendkeys_username();
         sendkeys_password();
         click_login_btn();
     }
 
     @When("User clicks on new Registration button")
-    public void user_clicks_on_new_registration_button() throws InterruptedException {
+    public void user_clicks_on_new_registration_button()  {
         click_NewRegister_btn();
     }
 }

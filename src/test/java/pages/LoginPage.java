@@ -1,9 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-
-import static pages.HomePage.driver;
+import static utility.BrowserDriver.driver;
 
 public class LoginPage {
 

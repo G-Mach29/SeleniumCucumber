@@ -9,11 +9,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+import static utility.BrowserDriver.driver;
+
 public class HomePage {
     public static String hamburger_menu_xpath = "//*[@id=\"menuToggle\"]/input";
     public static String signIn_link_LinkText = "Sign In Portal";
     public static String onlineProductsPage_link_LinkText = "Online Products";
-    public static WebDriver driver;
+
 
     public static void click_hamburger_menu() {
         WebDriverManager.chromedriver().setup();
@@ -27,8 +29,9 @@ public class HomePage {
         wait.until(d-> driver.findElement(By.linkText(signIn_link_LinkText)).isDisplayed());
         driver.findElement(By.linkText(signIn_link_LinkText)).click();
     }
-    public static void click_OnlineProducts_link() throws InterruptedException {
-        Thread.sleep(2000);
+    public static void click_OnlineProducts_link()  {
+        Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        wait.until(d-> driver.findElement(By.linkText(onlineProductsPage_link_LinkText)).isDisplayed());
         driver.findElement(By.linkText(onlineProductsPage_link_LinkText)).click();
     }
 
