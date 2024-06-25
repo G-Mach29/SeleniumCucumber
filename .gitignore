@@ -1,5 +1,7 @@
-#target/
- #!.mvn/wrapper/maven-wrapper.jar
+/target/
+*/target/**
+**/META-INF/
+!.mvn/wrapper/maven-wrapper.jar
  .idea/**/src/main/**/target/
  .idea/**/src/test/**/target/
  #
@@ -55,6 +57,11 @@
 *.ipr
 .idea
 
+.classpath
+.project
+.settings/
+/logs/
+
 # Sensitive or high-churn files
 .idea/**/dataSources/
 .idea/**/dataSources.ids
@@ -83,3 +90,11 @@
 /.idea/sonarlint/securityhotspotstore/index.pb
 /target/classes/co/uk/Main.class
 /target/test-classes/runner/TestRunner.class
+/target/test-classes/pages/LoggedInPage.class
+/target/test-classes/stepDefinition/LoggedInPage.class
+/target/test-classes/pages/LoginPage.class
+/target/test-classes/stepDefinition/LoginPage.class
+/target/test-classes/pages/OnlineProductsPage.class
+/target/test-classes/stepDefinition/OnlineProductsPage.class
+/target/test-classes/pages/RegistrationPage.class
+/target/test-classes/stepDefinition/RegistrationPage.class
