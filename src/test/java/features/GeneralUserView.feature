@@ -1,3 +1,4 @@
+@currentTest
 Feature: General View
 
   Scenario: Validate general user is able to view products wihtout logging in

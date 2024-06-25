@@ -18,8 +18,8 @@ public class HomePage {
 
 
     public static void click_hamburger_menu() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        //WebDriverManager.chromedriver().setup();
+       // driver = new ChromeDriver();
         driver.get("https://anupdamoda.github.io/AceOnlineShoePortal/index.html#");
         driver.findElement(By.xpath(hamburger_menu_xpath)).click();
     }
