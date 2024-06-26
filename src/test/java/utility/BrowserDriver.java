@@ -21,7 +21,7 @@ public class BrowserDriver {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://opensource-demo.orangehrmlive.com");
+
     }
 
     /**
