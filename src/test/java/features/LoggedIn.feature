@@ -1,5 +1,5 @@
 
-@currentTest
+
 Feature: LoggedIn User View
 
   Scenario: Validate user is able to view after Login
